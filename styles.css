@@ -18,7 +18,9 @@ body {
 }
 
 .logo {
-    width: 15%;
+    pointer-events: none;
+    width: 15px;
+    height: auto;
 }
 
 .navbar {
@@ -26,6 +28,12 @@ body {
     text-align: center;
     color: #025157;
     font-weight: 500;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
 }
 
 .actions {
@@ -51,6 +59,22 @@ button {
     background-color: #025157;
 }
 
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo video {
+    width: 600px;
+    height: 450px;
+}
+
+video::poster {
+    width: 600px;
+    height: 450px;
+}
+
 .publish h3{
     font-family: "Alegreya", serif;
     font-size: 40px;
@@ -67,6 +91,7 @@ button {
 
 .publish > form {
     display: flex;
+    
 }
 
 .publish > form p {
